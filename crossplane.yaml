@@ -1,0 +1,16 @@
+apiVersion: meta.pkg.crossplane.io/v1alpha1
+kind: Configuration
+metadata:
+  name: configuration-aws-eks-irsa
+  annotations:
+    meta.crossplane.io/maintainer: Upbound <support@upbound.io>
+    meta.crossplane.io/source: github.com/upbound/configuration-aws-eks-irsa
+    meta.crossplane.io/license: Apache-2.0
+spec:
+  crossplane:
+    version: ">=v1.13.2-0"
+  dependsOn:
+    - configuration: xpkg.upbound.io/upbound/configuration-aws-network
+      version: ">=v0.2.0"
+    - configuration: xpkg.upbound.io/upbound/configuration-aws-eks
+      version: ">=v0.1.0"

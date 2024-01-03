@@ -8,7 +8,8 @@ metadata:
     meta.crossplane.io/license: Apache-2.0
 spec:
   crossplane:
-    version: ">=v1.13.2-0"
+    version: ">=v1.14.1-0"
   dependsOn:
     - configuration: xpkg.upbound.io/upbound/configuration-aws-eks
-      version: ">=v0.1.0"
+      # renovate: datasource=github-releases depName=upbound/configuration-aws-eks
+      version: "v0.4.0"

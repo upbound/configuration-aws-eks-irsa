@@ -154,8 +154,6 @@ spec:
               - fromFieldPath: spec.parameters.id
                 toFieldPath: spec.providerConfigRef.name
                 type: FromCompositeFieldPath
-              - patchSetName: deletionPolicy
-                type: PatchSet
               - fromFieldPath: spec.parameters.id
                 toFieldPath: metadata.annotations[crossplane.io/external-name]
                 transforms:

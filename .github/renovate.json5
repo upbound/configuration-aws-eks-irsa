@@ -27,7 +27,7 @@
         "UPTEST_VERSION = (?<currentValue>.*?)\\n"
       ],
       "datasourceTemplate": "github-releases",
-      "depNameTemplate": "upbound/uptest",
+      "depNameTemplate": "crossplane/uptest",
     }, {
       "customType": "regex",
       "description": "Bump providers/functions/configurations in crossplane.yaml",
